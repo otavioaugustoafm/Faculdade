@@ -10,6 +10,6 @@ pelo seu antecessor ou sucessor imediato. Eles estarão nas folhas.
 Exemplo: Remover o 29 da seguinte página raiz (.29.-.-.-.) -> Supondo que as folhas estão na seguinte disposição:  
 --------------------(.29.-.-.-.)-----------------------  
 ----(.8.15.-.-.)---------------------(.37.45.60.-.)----  
-(...)(...)(.18.20.25.-.)----(.30.35.-.-.)(...)(...)----  
+(...)(...)(.18.20.25.-.)--------(.30.35.-.-.)(...)(...)----  
 Podemos substituir o 29 por 25 ou 30, nesse caso sendo melhor substituir por 25, já que ele não demanda nenhum movimento a mais para manter as 
 páginas envolvidas atualizadas  
