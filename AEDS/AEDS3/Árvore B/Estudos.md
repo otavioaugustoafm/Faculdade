@@ -18,3 +18,11 @@
 
 # Anotações  
 * Chamamos os nodos de PÁGINAS  
+
+# Estrutura da página
+N|P0|C0D0|P1|C1D1|P2|C2D2|P3|C3D3|...|Pn-1|Cn-1Dn-1|Pn  
+N -> é o número de chaves armazenadas nessa página  
+C -> é a chave que está armazenada nessa página
+P -> é o ponteiro que aponta para o filho em determinada faixa de valor. No caso de P0, ele aponta para o filho esquerdo (valores menores) da chave C0  
+D -> é o endereço físico onde a chave está armazenada no disco (dados)  
+OBS: Trabalhamos normalmente com o valor de ponteiro -1 ou 0 para ponteiros vazios  
