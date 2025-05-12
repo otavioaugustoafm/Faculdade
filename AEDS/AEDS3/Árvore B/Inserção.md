@@ -31,3 +31,6 @@ Caso o valor fosse maior que 30, por exemplo 31, iríamos inserir na da direita,
 Nesse caso, PROMOVEMOS o 25 (chave mais a esquerda da página direita)  
 Ficando então (.18.24.-.-.) e (.30.31.-.-.), sendo a página pai dessas duas (.8.15.25.-.)  
 
+Se a página pai estiver cheia e precisamos inserir o valor promovido a ela, entramos com a recursividade, fazendo o mesmo processo de divisão descrito acima 
+nas páginas necessárias  
+
