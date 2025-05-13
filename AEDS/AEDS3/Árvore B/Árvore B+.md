@@ -18,4 +18,19 @@ o maior elemento dela (mais a direita). Caso tivéssemos inserido na página dir
 
 # Remoção
 * Seguimos as mesmas regras da árvore B padrão, tanto de redistribuição e fusão  
-*  
+* No entanto, se vamos fazer uma junção de páginas e o elemento da página superior descer para uma folha, ele some. Caso seja em páginas 
+não folhas, mantemos a mesma lógica da árvore B normal  
+Exemplo: Remover o 42
+--------------------(.29.-.-.-.)-----------------------  
+----(.8.15.-.-.)------------------------- (.40.45.60.-.)----  
+(...)(...)(.18.20.25.-.)--------(.30.37.-.-.)(.41.42.-.-.)(.51.52.-.-.)----  
+Aqui vamos remover o 42 e perceber que a folha fica com menos de 50% de ocupação. Então, procuramos fazer uma junção de folhas. Depende do cógido, mas olhamos uma das folhas irmãs 
+primeiro, descendo a chave em comum entre elas e juntando as demais chaves em uma folha.  
+--------------------(.29.-.-.-.)-----------------------  
+----(.8.15.-.-.)------------------------- (.40.45.60.-.)----  
+(...)(...)(.18.20.25.-.)--------(.30.37.-.-.)(.41.-.-.-.)(.51.52.-.-.)----  
+Aqui percebemos que não podemos apenas ceder o 51 e nem o 37. Nesse caso, vamos fazer uma junção. Juntando com a página direita obtemos:
+--------------------(.29.-.-.-.)-----------------------  
+----(.8.15.-.-.)------------------------- (.40.60.-.-.)----  
+(...)(...)(.18.20.25.-.)--------(.30.37.-.-.)(.41.51.-.-.)----  
+Obs: Excluímos o 45 já que ele não é chave válida na folha. Se fossemos juntar as duas folhas superiores com a raiz, ai sim manteríamos a regra da árvore B normal
