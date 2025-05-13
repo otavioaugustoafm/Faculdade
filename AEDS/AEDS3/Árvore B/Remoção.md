@@ -39,7 +39,7 @@ primeiro, descendo a chave em comum entre elas e juntando as demais chaves em um
 --------------------(.29.-.-.-.)-----------------------  
 ----(.8.15.-.-.)------------------------- (.40.45.60.-.)----  
 (...)(...)(.18.20.25.-.)--------(.30.37.-.-.)(.41.-.-.-.)(.51.52.-.-.)----  
-Aqui percebemos que não podemos apenas ceder o 51 e nem o 37. Nesse caso, vamos fazer uma junção. Depende da implementação, juntando com a página direita obtemos:
+Aqui percebemos que não podemos apenas ceder o 51 e nem o 37. Nesse caso, vamos fazer uma junção. Juntando com a página direita obtemos:
 --------------------(.29.-.-.-.)-----------------------  
 ----(.8.15.-.-.)------------------------- (.40.60.-.-.)----  
 (...)(...)(.18.20.25.-.)--------(.30.37.-.-.)(.41.45.51.-.)----  
