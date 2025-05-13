@@ -36,3 +36,10 @@ Exemplo: Remover o 42
 (...)(...)(.18.20.25.-.)--------(.30.37.-.-.)(.41.42.-.-.)(.51.52.-.-.)----  
 Aqui vamos remover o 42 e perceber que a folha fica com menos de 50% de ocupação. Então, procuramos fazer uma junção de folhas. Depende do cógido, mas olhamos uma das folhas irmãs 
 primeiro, descendo a chave em comum entre elas e juntando as demais chaves em uma folha.  
+--------------------(.29.-.-.-.)-----------------------  
+----(.8.15.-.-.)------------------------- (.40.45.60.-.)----  
+(...)(...)(.18.20.25.-.)--------(.30.37.-.-.)(.41.-.-.-.)(.51.52.-.-.)----  
+Aqui percebemos que não podemos apenas ceder o 51 e nem o 37. Nesse caso, vamos fazer uma junção. Depende da implementação, juntando com a página direita obtemos:
+--------------------(.29.-.-.-.)-----------------------  
+----(.8.15.-.-.)------------------------- (.40.60.-.-.)----  
+(...)(...)(.18.20.25.-.)--------(.30.37.-.-.)(.41.51.-.-.)----  
