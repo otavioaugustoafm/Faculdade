@@ -18,6 +18,8 @@
 
 # Anotações  
 * Chamamos os nodos de PÁGINAS  
+* A árvore B+ é a melhor estrutura para índices somente quando vamos fazer leituras sequenciais  
+* Caso a busca seja de uma chave, a árvore B atende, mas não tão bem quanto uma tabela hash  
 
 # Estrutura da página
 N|P0|C0D0|P1|C1D1|P2|C2D2|P3|C3D3|...|Pn-1|Cn-1Dn-1|Pn  
