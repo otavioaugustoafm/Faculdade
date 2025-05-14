@@ -21,7 +21,7 @@ Caso 3 - Se a folha ficar com menos de 50% e a irmã puder ceder: Fazemos a busc
 ceder uma chave. Nesse caso, observamos que sim, uma irmã pode ceder. Fazemos uma rotação  
 Exemplo: Remover o 35  
 --------------------(.29.-.-.-.)-----------------------  
-----(.8.15.-.-.)---------------------(.37.45.60.-.)----  
+----(.8.15.-.-.)---------------------(.37.60.-.-.)----  
 (...)(...)(.18.20.25.-.)--------(.30.35.-.-.)(.40.51.52.-.)(...)----
 Nesse caso cedemos o 40, subindo com ele e descendo com o 37, ou seja, uma rotação  
 --------------------(.29.-.-.-.)-----------------------  
@@ -41,5 +41,5 @@ primeiro, descendo a chave em comum entre elas e juntando as demais chaves em um
 (...)(...)(.18.20.25.-.)--------(.30.37.-.-.)(.41.-.-.-.)(.51.52.-.-.)----  
 Aqui percebemos que não podemos apenas ceder o 51 e nem o 37. Nesse caso, vamos fazer uma junção. Juntando com a página direita obtemos:
 --------------------(.29.-.-.-.)-----------------------  
-----(.8.15.-.-.)------------------------- (.40.60.-.-.)----  
+----(.8.15.-.-.)------------------------- (.40.52.60.-.)----  
 (...)(...)(.18.20.25.-.)--------(.30.37.-.-.)(.41.45.51.-.)----  
