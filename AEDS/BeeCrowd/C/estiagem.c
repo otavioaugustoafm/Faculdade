@@ -44,6 +44,8 @@ void inserirFim(Lista* lista, int qnt_imoveis) {
         tmp->prox = cidade;
         lista->ultimo = cidade;
     }
+    cidade->imovel = (Imovel**) malloc (qnt_imoveis * sizeof(Imovel));
+    
 }
 
 int main () {
