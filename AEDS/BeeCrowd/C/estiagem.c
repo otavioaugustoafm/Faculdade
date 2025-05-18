@@ -44,21 +44,27 @@ void inserirFim(Lista* lista, int qnt_imoveis) {
         tmp->prox = cidade;
         lista->ultimo = cidade;
     }
-    cidade->imovel = (Imovel**) malloc (qnt_imoveis * sizeof(Imovel));
-    
+    cidade->imovel = (Imovel**) malloc (sizeof(Imovel*) * qnt_imoveis);
+    for(int i = 0; i < qnt_imoveis; i++) {
+        cidade->imovel[i] = (Imovel*) malloc (sizeof(Imovel));
+        printf("Qnt_pessoas");
+        scanf("%d", &cidade->imovel[i]->qnt_pessoas);
+        printf("Qnt_consumo");
+        scanf("%d", &cidade->imovel[i]->qnt_consumo);
+    }   
 }
 
 int main () {
     Lista lista;
-    Cidade cidade;
     construtorLista(&lista);
     int qnt_imoveis = 0;
     while(1) {
+        printf("Qnt_imoveis");
         scanf("%d", &qnt_imoveis);
+        getchar();
         if(qnt_imoveis == 0) {
             break;
         }
-        construtorCidade(&cidade);
-        
+        inserirFim(&lista, qnt_imoveis);        
     }
 }
