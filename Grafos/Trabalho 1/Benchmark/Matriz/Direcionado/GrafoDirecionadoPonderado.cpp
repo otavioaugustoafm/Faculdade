@@ -40,7 +40,7 @@ void CriarArestas_DP(Vertice_DP **grafo, int vert){
 
         if (v1 == v2)
         {
-            cout << "Loops nao existem em um grafo simples! Por favor escreva uma aresta valida." << endl;
+            cout << "Loops nao existem em um grafo simples! ~Por favor escreva uma aresta valida." << endl;
             continue;
         }
 
